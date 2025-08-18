@@ -1,0 +1,179 @@
+/* CSS Resets */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, p {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul, ol {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.25;
+}
+
+/* Balance text wrapping on headings */
+h1, h2 {
+  text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+/* CSS Variables */
+
+:root {
+
+    /* COLORS */
+
+    --clr-white: #FFFFFF;
+    --clr-gray-500: #6B7082;
+    --clr-gray-100: #E8E9EC;
+    --clr-blue-600: #19A1AE;
+    --clr-blue-400: #41CBD3;
+    --clr-navy: #2E3349;
+
+    /* FONTS */
+
+    --ff-main: "Kumbh Sans", sans-serif;
+
+    /* SPACINGS */
+
+    --space-100: 0.5rem;
+    --space-200: 1rem;
+    --space-300: 1.5rem;
+    --space-700: 3.5rem;
+
+    /* BORDER RADIUS */
+    --rounded-sm: 1.5rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--ff-main);
+    padding: var(--space-300);
+    background-color: var(--clr-blue-600);
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    width: 978px;
+    height: 976px;
+    z-index: -1;
+}
+
+.top-left {
+    top: -600px;
+    left: -100px;
+}
+
+.bottom-right {
+    bottom: -600px;
+    right: -100px;
+}
+
+.profile {
+    background-color: var(--clr-white);
+    border-radius: var(--rounded-sm);
+    max-width: 20.375rem;
+    width: 100%;
+    text-align: center;
+    padding: var(--space-300) 0;
+    background-image: url('./images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.profile__img {
+    display: inline-block;
+    border: 5px solid var(--clr-white);
+    border-radius: 50%;
+    margin-block-start: 3.7rem;
+    margin-block-end: var(--space-200);
+}
+
+.profile__name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-100);
+    margin-block-end: var(--space-100);
+}
+
+.profile__name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--clr-navy);
+}
+
+.profile__age {
+    font-size: 1.125rem;
+    color: var(--clr-gray-500);
+}
+
+.profile__location {
+    font-size: 0.875rem;
+    color: var(--clr-gray-500);
+    font-style: normal;
+    margin-block-end: var(--space-300);
+}
+
+.separator {
+    border: 1px solid var(--clr-gray-100);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-block-start: var(--space-300);
+}
+
+.stats__data {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--clr-navy);
+    margin-block-end: var(--space-100);
+}
+
+.stats__heading {
+    font-size: 0.625rem;
+    letter-spacing: 0.15em;
+    color: var(--clr-gray-500);
+}

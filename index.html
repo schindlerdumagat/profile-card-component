@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <img class="circle top-left" src="./images/bg-pattern-top.svg" alt="">
+    <main>
+      <h1 class="sr-only">Sample Profile Card Component</h1>
+      <div class="profile">
+        <img class="profile__img" src="./images/image-victor.jpg" alt="" />
+        <div class="profile__name-container">
+          <h2 class="profile__name">Victor Crest</h2>
+          <p class="profile__age">26</p>
+        </div>
+        <address class="profile__location">London</address>
+        <hr class="separator"/>
+        <ul class="stats">
+          <li class="stats__item">
+            <p class="stats__data">80K</p>
+            <p class="stats__heading">Followers</p>
+          </li>
+          <li class="stats__item">
+            <p class="stats__data">803K</p>
+            <p class="stats__heading">Likes</p>
+          </li>
+          <li class="stats__item">
+            <p class="stats__data">1.4K</p>
+            <p class="stats__heading">Photos</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <img class="circle bottom-right" src="./images/bg-pattern-bottom.svg" alt="">
+  </body>
+</html>
