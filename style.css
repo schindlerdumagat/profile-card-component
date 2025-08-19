@@ -88,25 +88,21 @@ body {
     font-family: var(--ff-main);
     padding: var(--space-300);
     background-color: var(--clr-blue-600);
-    position: relative;
-    overflow: hidden;
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -60vh left -205vw, bottom -60vh right -205vw; 
 }
 
-.circle {
-    position: absolute;
-    width: 978px;
-    height: 976px;
-    z-index: -1;
+@media screen and (min-width: 48rem) {
+    body {
+      background-position: top -55vh left -80vw, bottom -55vh right -80vw; 
+    }
 }
 
-.top-left {
-    top: -600px;
-    left: -100px;
-}
-
-.bottom-right {
-    bottom: -600px;
-    right: -100px;
+@media screen and (min-width: 64rem) {
+    body {
+      background-position: top -60vh left -15vw, bottom -60vh right -15vw; 
+    }
 }
 
 .profile {
