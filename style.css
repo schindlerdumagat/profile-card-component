@@ -90,18 +90,18 @@ body {
     background-color: var(--clr-blue-600);
     background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: top -60vh left -205vw, bottom -60vh right -205vw; 
+    background-position: top -30rem left -50rem, bottom -30rem right -50rem; 
 }
 
 @media screen and (min-width: 48rem) {
     body {
-      background-position: top -55vh left -80vw, bottom -55vh right -80vw; 
+      background-position: top -30rem left -35rem, bottom -30rem right -35rem; 
     }
 }
 
 @media screen and (min-width: 64rem) {
     body {
-      background-position: top -60vh left -15vw, bottom -60vh right -15vw; 
+      background-position: top -30rem left -30rem, bottom -30rem right -30rem; 
     }
 }
 
